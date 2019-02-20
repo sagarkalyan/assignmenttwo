@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "public": true,
+  "name": "wmdd-get-w5",
+  "env": {
+    "DBHOST": "movielist.cfziyh3otjpq.us-east-2.rds.amazonaws.com",
+    "DBPORT": "3306",
+    "DBUSER": "",
+    "DBPASSWORD": "",
+    "DBNAME": "movies"
+  },
+  "builds": [
+    { "src": "index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
